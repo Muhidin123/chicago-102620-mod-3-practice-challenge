@@ -5,7 +5,8 @@
       "name": "Carlton",
       "image": "https://i.imgur.com/iM8ybeC.gif",
       "description": "20 years of experience in all forms of dance. Known for shiny outfits.",
-      "likes": 23
+      "likes": "25",
+      "feedback": "Hello"
     },
     {
       "id": 2,
@@ -63,12 +64,12 @@
     {
       "id": 7,
       "dancerId": 4,
-      "feedback":  "I like this"
+      "feedback": "I like this"
     },
     {
       "id": 8,
       "dancerId": 4,
-      "feedback":  "You are better than coffee!"
+      "feedback": "You are better than coffee!"
     }
   ]
 }
