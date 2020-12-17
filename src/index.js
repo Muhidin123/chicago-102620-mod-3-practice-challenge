@@ -40,10 +40,8 @@ function unlike() {
   return (likes.textContent -= 1);
 }
 
-const feedbackInput = document.querySelector("#new-feedback");
-
 form.addEventListener("submit", (e) => {
   e.preventDefault();
-  console.log(feedbackInput.value);
-  patchFetch(undefined, feedbackInput.value);
+  ul.innerHTML += `<li>${input.value}</li>`;
+  form.reset();
 });

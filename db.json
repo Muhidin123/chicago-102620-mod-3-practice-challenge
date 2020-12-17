@@ -5,7 +5,7 @@
       "name": "Carlton",
       "image": "https://i.imgur.com/iM8ybeC.gif",
       "description": "20 years of experience in all forms of dance. Known for shiny outfits.",
-      "likes": "25",
+      "likes": 8,
       "feedback": "Hello"
     },
     {
@@ -13,7 +13,7 @@
       "name": "Celery Man",
       "image": "https://media.giphy.com/media/WaZiz4UsM2lhu/giphy.gif",
       "description": "Dances with celery sticks on occasion, but not always.",
-      "likes": 2
+      "likes": 8
     },
     {
       "id": 3,

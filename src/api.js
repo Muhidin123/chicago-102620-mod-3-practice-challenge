@@ -8,12 +8,11 @@ function fetchAll() {
     });
 }
 
-function patchFetch(newLikes = likes.textContent, feedback) {
+function patchFetch(newLikes) {
   fetch("http://localhost:3000/dancers/1", {
     method: "PATCH",
     body: JSON.stringify({
       likes: newLikes,
-      feedback: feedback,
     }),
     headers: {
       "Content-Type": "application/json",
@@ -23,6 +22,18 @@ function patchFetch(newLikes = likes.textContent, feedback) {
     .then((result) => {
       likes.innerText = result.likes;
       console.log(result);
-      ul.innerHTML += `<li>${result.feedback}</li>`;
+      //   ul.innerHTML += `<li>${result.feedback}</li>`;
     });
+}
+
+function postFetch(feedback) {
+  fetch("http://localhost:3000/dancers/1", {
+    method: "Post",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: JSON.stringify({
+        feedback: feedback
+    }),
+  }).then((res) => res.json());
 }
